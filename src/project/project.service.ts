@@ -4,7 +4,7 @@ import { Repository  } from 'typeorm';
 import { project } from './project.entity';
 import { CreateProjectDto } from './dto/createProjectDto';
 import { UpdateProjectDto } from './dto/updateProjectDto';
-import { ChangeDescription } from './dto/changeDescriptionDto';
+import { ChangeDescription } from './dto/changeDescriptionDto'; 
 import { ChangeDateCompletion } from './dto/changeDateCompletionDto';
 import { ChangeCategory } from './dto/changeCategoryDto';
 import { AddCollaborator } from './dto/addCollaboratorDto';
