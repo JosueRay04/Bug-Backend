@@ -1,0 +1,25 @@
+<h1>Dashboard</h1>
+<!-- dashboard.component.html -->
+
+<div class="chart-container" #chartContainer>
+    <ngx-charts-pie-chart
+        [view]="view"
+        scheme="fire"
+        [results]="single"
+        [gradient]="gradient"
+        [legend]="showLegend"
+        [labels]="showLabels"
+        [doughnut]="isDoughnut"
+        (select)="onSelect($event)"
+        (activate)="onActivate($event)"
+        (deactivate)="onDeactivate($event)"
+    >
+    </ngx-charts-pie-chart>
+</div>
+
+<div class="legend-container">
+    <div *ngFor="let item of single" class="legend-item">
+    <span>PROJECTS: {{ item.name }}:</span>
+    <span class="legend-percentage">{{ item.percentage }}%</span>
+    </div>
+</div>
